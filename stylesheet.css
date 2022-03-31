@@ -19,8 +19,6 @@
 .calculator{
     background-image: url(./mugiwara.png);
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .container{
     background-image: url(./newgate.png);
@@ -84,7 +82,10 @@ button:hover {
         width: 275px;
         margin-top: 100px;
     }
-
+    .calculator{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     .layar {
         width: 95%;
     }
@@ -118,29 +119,35 @@ button:hover {
 /* tampilan di smartphone */
 @media (max-width: 999px){
     .container{
-        width: 60%;
+        width: 80%;
         padding : 25px;
         border-radius: 20px;
-        margin-top: 100px;
+        margin-top: 200px;
     }
+
+    .calculator{
+        padding-top: 100px;
+        padding-bottom: 600px;
+    }
+
     .layar {
         width: 100%;
     }
     .calculator-screen {
-        font-size: 50px;
-        margin-top: 20px;
-        margin-bottom: 60px;
+        font-size: 70px;
+        margin-top: 30px;
+        margin-bottom: 80px;
         border-radius: 15px;
-        height: 90px;
-        padding-right: 15px;
+        height: 120px;
+        padding-right: 30px;
     } 
     button{
-        height: 90px;
+        height: 120px;
         width: 25%;
-        font-size: 50px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        margin-right: 5px;
-        margin-left: 5px;
+        font-size: 70px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
