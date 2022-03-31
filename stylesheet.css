@@ -1,37 +1,31 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Pengaturan penempatan kalkulator menggunakan flex */
-.calculator {               
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    background-image: url(./mugiwara.png);
-    background-size: cover;
-}
-
-
-
 /* Pengaturan penampilan layar kalkulator */
 .calculator-screen {
-    width: 250px;
-    height: 50px;
     background-color: gray;
     color: #fff;
     text-align: right;
     font-size: 25px;
-    border: none;
-    padding: 0 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    width: 100%;
+    height: 45px;
 } 
 
-
+.calculator{
+    background-image: url(./mugiwara.png);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.container{
+    background-image: url(./newgate.png);
+    background-size: cover;
+}
 
 /* Pengaturan tampilan tombol per baris */
 .row {
@@ -77,49 +71,75 @@ button:hover {
     background-color: darkorange;
 }
 
-@media (min-width: 671px){
+.container {
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 3px 5px gray;
+}
+
+/* tampilan kalkulator di laptop */
+@media (min-width: 1000px){     
     .container {
-        padding: 20px 10px 10px 10px;
-        border : 1px solid black;
-        border-radius: 10px;
-        background-color: black;
-        box-shadow: 3px 5px gray;
+        width: 275px;
+        margin-top: 100px;
     }
+
+    .layar {
+        width: 95%;
+    }
+
+    .calculator-screen {
+        font-size: 25px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: 45px;
+    } 
 
     /* Pengaturan lebar bagian tombol-tombol menyesuaikan lebar layar kalkulator */
     .calculator-keys{
-    width: 250px;
+        width: 95%;
     }
+
+    /* Pengaturan tampilan tombol */
     button{
         height: 45px;
         width: 25%;
         font-size: 25px;
         border-radius: 10px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         margin-right: 2px;
         margin-left: 2px;
     }
 }
 
-@media (max-width: 670px){
-    .container {
-        padding: 20px 10px 10px 10px;
-        border : 1px solid black;
-        border-radius: 10px;
-        background-color: black;
-        box-shadow: 3px 5px gray;
+/* tampilan di smartphone */
+@media (max-width: 999px){
+    .container{
         width: 60%;
+        padding : 25px;
+        border-radius: 20px;
+        margin-top: 100px;
     }
-
-    .calculator-keys{
+    .layar {
         width: 100%;
     }
-
+    .calculator-screen {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        border-radius: 15px;
+        height: 90px;
+        padding-right: 15px;
+    } 
     button{
         height: 90px;
+        width: 25%;
         font-size: 50px;
-        border-radius: 20px;
-        margin-bottom: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
         margin-right: 5px;
         margin-left: 5px;
     }
