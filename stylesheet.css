@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan penempatan kalkulator menggunakan flex */
+.calculator {               
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.container {
+    padding: 20px 10px 10px 10px;
+    border : 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 3px 5px gray;
+}
+
+/* Pengaturan penampilan layar kalkulator */
+.calculator-screen {
+    width: 250px;
+    height: 50px;
+    background-color: gray;
+    color: #fff;
+    text-align: right;
+    font-size: 25px;
+    border: none;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+} 
+
+/* Pengaturan lebar bagian tombol-tombol menyesuaikan lebar layar kalkulator */
+.calculator-keys{
+    width: 250px;
+}
+
+/* Pengaturan tampilan tombol per baris */
+.row {
+    display: flex;
+}
+
+/* Pengaturan tampilan tombol */
+button{
+    height: 45px;
+    width: 25%;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    box-shadow: 0px 3px #1a7940;
+}
+
+button:active{
+    position: relative;
+    top: 3px;
+}
+
+.all-clear{
+    background-color: #ff0000ea;
+}
+.all-clear:hover {
+    background-color: red;
+}
+
+/* Pengaturan lebar bagian tombol AC dan 0 */
+.all-clear, .zero {
+    width: 50%;
+}
+/* pengaturan warna tombol operator dan = */
+.operator, .equal-sign {
+    background-color: orange;
+}
+/* pengaturan animasi hover tombol */
+button:hover {
+    background-color: darkgray;
+}
+.operator:hover {
+    background-color: darkorange;
+}
+.equal-sign:hover {
+    background-color: darkorange;
+}
